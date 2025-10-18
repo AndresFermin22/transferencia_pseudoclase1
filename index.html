@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">    
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
+  <header class="encabezado">
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Appointment</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="telefono">
+      <i class='bx  bx-phone'  ></i> </i> (+605) 1234-56789
+    </div>
+  </header>
+
+  <aside class="barra-lateral"> /*sidebar*/
+    <a href="#"><i class='bx  bx-building-house' ></i> </i></a>
+    <a href="#"><i class='bx  bx-bird'  ></i> </i></a>
+    <a href="#"><i class='bx  bx-book'  ></i> </i></a>
+    <a href="#"><i class='bx  bx-camera'  ></i> </i></a>
+    <a href="#"><i class='bx  bx-play'  ></i> </i></a>
+  </aside>
+
+
+
+
+  <main class="contenedor">
+    <section class="izquierda">
+      <div class="imagen-izq"> /*overlay*/
+        <h1>Full DedicatedTo Your Dental Health.</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="botones">
+          <button class="btn btn-primario"><i class="fa-solid fa-circle-play"></i> Book now</button>
+          <button class="btn btn-secundario"><i class="fa-solid fa-circle-play"></i> Read more</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="derecha">
+      <div class="formulario">
+        <h2>Book an Appointment</h2>
+        <form>
+          <div class="fila">
+            <input type="text" placeholder="First Name*" required>
+            <input type="text" placeholder="Last Name*" required>
+          </div>
+          <div class="fila">
+            <input type="email" placeholder="Your Email Address*" required>
+          </div>
+          <div class="fila">
+            <input type="tel" placeholder="Contact No*" required>
+          </div>
+          <div class="fila">
+            <input type="date" required>
+            <input type="time" required>
+          </div>
+          <button type="submit" class="btn btn-primario">
+            Book now <i class="fa-solid fa-circle-play"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
 </body>
 </html>
