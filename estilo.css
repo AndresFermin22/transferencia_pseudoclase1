@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --verde-principal: #1abc9c;
+  --verde-oscuro: #0d3d33;
+  --gris-claro: #f4f9f7;
+  --texto: #333;
+  --radio: 10px;
+  --sombra: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  display: flex;
+  background-color: var(--gris-claro);
+  color: var(--texto);
+}
+
+.barra-lateral {
+  background-color: var(--verde-oscuro);
+  width: 70px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 10px;
+
+}
+
+.barra-lateral a {
+  color: white;
+  font-size: 20px;
+}
+
+.barra-lateral a:hover {
+  color: var(--verde-principal);
+}
+
+.encabezado {
+  position: fixed;
+  top: 0;
+  left: 70px;
+  right: 0;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  z-index: 10;
+}
+
+.menu ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: var(--verde-principal);
+}
+
+.telefono {
+  color: var(--verde-principal);
+  font-weight: bold;
+}
+
+.contenedor {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 70px;
+  width: 100%;
+}
+
+.contenedor-izq {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("dentista.jpg") center/cover ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 500px;
+  width: auto;
+  padding: 50px;
+}
+
+.imagen-izq {
+  max-width: 500px;
+}
+
+.imagen-izq h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2px;
+}
+
+.imagen-izq h2 {
+    font-size: 2.5rem;
+    color: #08bd98;
+}
+
+.imagen-izq p {
+  font-size: 0.95rem;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.botones .btn {
+  padding: 12px 20px;
+  border-radius: var(--radio);
+  cursor: pointer;
+  font-weight: bold;
+  transition: var(--transicion);
+  font-size: 1.10rem;
+}
+
+.boton-book {
+  background-color: var(--verde-principal);
+  color: white;
+  margin-right: 10px;
+  border: 3px solid #08bd98;
+}
+
+.boton-book:hover {
+  background-color: #08bd98;
+}
+
+.boton-read {
+  background: transparent;
+  color: rgb(11, 230, 182);
+border: 3px solid #08bd98;
+}
+
+.boton-read:hover {
+  background-color: #464646bd;
+}
+
+
