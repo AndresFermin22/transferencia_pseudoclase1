@@ -10,19 +10,18 @@
   --gris-claro: #f4f9f7;
   --texto: #333;
   --radio: 10px;
-  --sombra: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 body {
   display: flex;
-  background-color: var(--gris-claro);
+  background-color:#c9f1e9;
   color: var(--texto);
 }
 
 .barra-lateral {
   background-color: var(--verde-oscuro);
   width: 70px;
-  height: 800px;
+  height: 58.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +31,13 @@ body {
 
 .barra-lateral a {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
+}
+
+.barra-lateral .casa {
+  margin-top: 0px;
+  margin-bottom: 30rem;
+  font-size: 30px;
 }
 
 .barra-lateral a:hover {
@@ -45,18 +50,18 @@ body {
   left: 70px;
   right: 0;
   height: 70px;
-  background-color: #ffffff;
+  background-color: #c9f1e9;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  z-index: 10;
+  font-size: 20px;
 }
 
 .menu ul {
   display: flex;
-  gap: 60px;
   list-style: none;
+  
 }
 
 .menu a {
@@ -65,6 +70,9 @@ body {
   font-weight: bold;
 }
 
+.menu li {
+  margin-left:  10rem;
+}
 .menu a:hover {
   color: var(--verde-principal);
 }
@@ -87,8 +95,8 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  height: 500px;
-  width: auto;
+  height: 51.5rem;
+  width: 50rem;
   padding: 50px;
 }
 
@@ -113,7 +121,6 @@ body {
 }
 
 .botones .btn {
-  padding: 12px 20px;
   border-radius: var(--radio);
   cursor: pointer;
   font-weight: bold;
@@ -121,11 +128,13 @@ body {
   font-size: 1.10rem;
 }
 
-.boton-book {
+.boton-book1 {
   background-color: var(--verde-principal);
   color: white;
   margin-right: 10px;
   border: 3px solid #08bd98;
+  margin-bottom: 10px;
+    padding: 10px 20px;
 }
 
 .boton-book:hover {
@@ -136,10 +145,94 @@ body {
   background: transparent;
   color: rgb(11, 230, 182);
 border: 3px solid #08bd98;
+  padding: 10px 20px;
 }
 
 .boton-read:hover {
   background-color: #464646bd;
 }
 
+.contenedor-der {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
+.formulario {
+  background: white;
+  padding: 50px;
+  border-radius: 15px;
+  height: 51.5rem;
+  width: 50rem;
+}
+
+.formulario h2 {
+  color: #08bd98;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+
+label {
+  color: #8a8181;
+}
+
+.fila {
+  margin-bottom: 10px;
+}
+
+.fila-doble {
+  display: flex;
+  width: 500rem;
+  margin-bottom: 20px;
+  
+}
+
+
+.fila label, .campo label {
+  display: block;
+  font-weight: 500px;
+}
+
+
+.fila input, .campo input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+input:focus {
+  border-color: #08bd98;
+}
+
+.campo {
+  width: 22.5rem;
+}
+
+button.boton-book {
+  display: block;
+  width: 20%;
+  background: #08bd98;
+  color: white;
+  padding: 8px;
+  border-radius: 25px;
+    border:#079e82;
+  font-size: 1rem;
+  cursor: pointer;
+    margin-left: 18rem;
+    margin-top: 5rem;
+
+}
+
+button.boton-book:hover {
+  background: #079e82;
+}
+
+button.boton-book i {
+  margin-left: 8px;
+  vertical-align: middle;
+}

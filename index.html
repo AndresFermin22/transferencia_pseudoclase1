@@ -23,11 +23,11 @@
   </header>
 
   <aside class="barra-lateral"> 
-    <a href="#"><i class='bx  bx-building-house' ></i> </i></a>
-    <a href="#"><i class='bx  bx-bird'  ></i> </i></a>
-    <a href="#"><i class='bx  bx-book'  ></i> </i></a>
-    <a href="#"><i class='bx  bx-camera'  ></i> </i></a>
-    <a href="#"><i class='bx  bx-play'  ></i> </i></a>
+    <a href="#" class="casa"><i class='bx  bx-building-house' ></i> </a>
+    <a href="#"><i class='bx  bx-bird'  ></i> </a>
+    <a href="#"><i class='bx  bx-book'  ></i> </a>
+    <a href="#"><i class='bx  bx-camera'  ></i> </a>
+    <a href="#"><i class='bx  bx-play'  ></i> </a>
   </aside>
 
 
@@ -46,32 +46,52 @@
         </p>
 
         <div class="botones"> 
-          <button class="btn boton-book"><i class='bx  bx-play-circle-alt' ></i> </i> Book now</button>
+          <button class="btn boton-book1"><i class='bx  bx-play-circle-alt' ></i> </i> Book now</button>
           <button class="btn boton-read"><i class='bx  bx-play-circle-alt'  ></i> </i> Read more</button>
         </div>
       </div>
     </section>
 
-    <section class="contenedor-der">
-      <div class="formulario">
-        <h2>Book an Appointment</h2>
-        <form>
-          <div class="fila">
-            <input type="text" placeholder="First Name*" required>
-            <input type="text" placeholder="Last Name*" required>
-            <input type="email" placeholder="Your Email Address*" required>
-            <input type="tel" placeholder="Contact No*" required>
-            <input type="date" required>
-            <input type="time" required>
-          </div>
-          <button type="enviar" class="btn boton-book"> 
-            Book now <i class='bx  bx-play-circle-alt'  ></i> ></i>
-          </button>
-        </form>
+<section class="contenedor-der">
+  <div class="formulario"> 
+    <h2>Book an Appointment</h2>
+    <form>
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="first">First Name:</label>
+          <input type="text" id="first" placeholder="First Name*" required>
+        </div>
+        <div class="campo">
+          <label for="last">Last Name:</label> 
+          <input type="text" id="last" placeholder="Last Name*" required>
+        </div>
       </div>
-    </section>
 
-  </main>
+      <div class="fila">
+        <label for="email">Your Email Address:</label>
+        <input type="email" id="email" placeholder="Your Email Address*" required>
+      </div>
 
-</body>
+      <div class="fila">
+        <label for="telefono">Contact No:</label> 
+        <input type="tel" id="telefono" placeholder="Contact No*" required>
+      </div>
+
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="date1">Date:</label> 
+          <input type="date" id="date1" required>
+        </div>
+        <div class="campo">
+          <label for="time1">Time:</label>
+          <input type="time" id="time1" required>
+        </div>
+      </div>
+
+      <button type="enviar" class="btn boton-book">Book now <i class='bx bx-play-circle'></i></button> 
+    </form> 
+  </div> 
+</section>
+      </main> 
+  </body> 
 </html>
