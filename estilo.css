@@ -203,6 +203,7 @@ label {
   border-radius: 25px;
   font-size: 0.95rem;
   margin-bottom: 30px;
+  background: #ddcfcf;
 }
 
 input:focus {
@@ -225,6 +226,7 @@ button.boton-book {
   cursor: pointer;
     margin-left: 18rem;
     margin-top: 5rem;
+
 
 }
 
